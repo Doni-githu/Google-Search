@@ -32,7 +32,6 @@ async def post(message: types.Message):
     pprint.pprint(knowledge)
     description = knowledge['description']
     text = description['text']
-    GoogleTranslator()
     await message.answer(text)
 
 
